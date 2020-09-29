@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MusicAlbum</title>
+  <link rel="stylesheet" href="./Files/index.css">
+</head>
+<body>
+  <h1>Music Album</h1>
+  <button onclick="addAlbums()">AddAlbum</button><br><br>
+    <label>Album List:</label> 
+    <select id="album" name="album" onchange="getSongs(this.value)">
+      </select>
+
+      <h2>Songs Based on AlbumName</h2>
+      <ol id="data">
+      </ol>
+
+      <label>Artist List:</label> 
+      <select id="artistInput" name="artistInput" onchange="getArtistList(this.value)">
+        </select>
+        
+      <h2>Songs Based on ArtistName</h2>
+      <ol id="artId">
+      </ol>
+      <audio controls class="audioClass" id='songPlay'>
+        <source type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <script src="./Files/album.js"></script>
+      <script src="./Files/artist.js"></script>
+      <script src="./Files/access.js"></script>
+    
+</body>
+</html>
